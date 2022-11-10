@@ -1,9 +1,14 @@
 #include <stdio.h>
+
+//Global Variables
 float meanMark;
 char grade (float s);
+
 int main (){
     int length;
     int sum = 0;
+
+    //Student Data
 printf("Enter the total number of students:\n");
 scanf("%d",&length);
 float marks [length];
@@ -67,7 +72,7 @@ printf("\ncwa = %.2f\n", cwa);
             if ((s>=70)&&(s<=100))
                 return 'A';
 
-            else if((70>s)&& (s>=60))
+            else if((70<s)&& (s>=60))
                     return'B';
 
             else if((60>s)&&(s>=50))
@@ -80,6 +85,6 @@ printf("\ncwa = %.2f\n", cwa);
                     return'F';
 
             else
-                return 'I';
+                return "None";
      }
 
